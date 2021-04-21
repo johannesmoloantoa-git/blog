@@ -1,5 +1,9 @@
 /*Google Font*/
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@300&family=Sniglet&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@300&family=Sniglet&display=swap'); 
+
+
+
+ 
 
 *{
     box-sizing: border-box;
@@ -7,9 +11,10 @@
 
 header, section{
 overflow-x: hidden;
-}
-
+}  
+  
 /*Crating variables*/
+
 :root{
     --Snigle-font:"Sniglet",cursive;
     --Rubik:"Rubik",cursive;
@@ -23,6 +28,7 @@ overflow-x: hidden;
 
 }
 
+
 header a{
     font-family: var(--Snigle-font);
     font-size: 0.9em;
@@ -30,14 +36,406 @@ header a{
 }
 
 header{
-    background: #dd2476;
-    background: var(--bggradient);
+   /* background-color: #f27da3;*/
+    background-color:  rgba(252, 210, 224, 17);
+   /* background: #dd2476;
+    background: var(--bggradient);*/
 }
 
-header.nav-item:last-child{
-  padding-right:10.5em;
-}
+.nav-item:last-child{
+    padding-right: 10.5em;
+  }
 
-header.nav-item{
+.nav-item{
     padding:0.9em;
 }
+
+.navbar-brand{
+    padding-left:8rem;
+}
+
+.nav-link:hover{
+    color:black;
+}
+
+header .row .col-md-4{
+    padding:15vmin 1vmin;
+    padding-bottom:35vmin;
+    font-family: var(--Rubik);
+    color:#000;
+}
+
+header .row .col-md-8{    
+    padding:3vmin 1vmin;
+}
+
+header .row .col-md-8 img{
+    width:100%;
+    border-radius: 30px;
+}
+
+header .container .col-md-4 h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+
+header .container .col-md-4 h1{
+    font-size: 8vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+header .container .col-md-4 p{
+    padding: ivmin 5vmin;;
+}
+
+header .container .col-md-4 button{
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/*.................Header styling ends here...............*/
+
+
+/*............Start section 1 styling............*/
+
+.section-1{
+    padding:10vmin 0;
+}
+
+.section-1 .row .col-md-6 .Pray img{
+    opacity: 1.2;
+    width: 100%;
+    border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child{
+    position:relative;
+}
+
+.section-1 .row .col-md-6 .panel{
+    position:absolute;
+    top:7vmin;
+    left:-18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 3vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0,0,0,0.2);
+    font-family: var(--Rubik);
+    z-index:1;
+}
+
+.section-1 .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p{
+    font-size: 0.9em;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+/*............Start section 2 styling............*/
+
+.cover{
+    width: 100%;
+    height: 55vmin;
+    background: url('../assets/pink.jpg') ;
+    background-size: 150%;
+    background-position: -25rem -19rem;
+    position: relative;
+
+}
+.cover .content{
+   
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin;
+}
+.cover .content h1{
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+
+.cover .content>p{
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color:#e5e5e5;
+}
+
+.numbers .rect{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+
+}
+
+.numbers{
+    margin-top: -15vmin;
+}
+
+.numbers .rect h1{
+    font-size: 5rem;
+    color:tomato;
+
+}
+.numbers .rect p{
+    font-family: var(--Patua);
+}
+
+.purchase>h1{
+    padding-top: 15vmin;
+    padding-bottom: 0.1em;
+    font-family:var(--Patua);
+}
+
+.purchase>p{
+    color:var(--light-blCK);
+    font-size: 3vmin;
+    padding-bottom: 5vmin;
+}
+
+.purchase .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.cards div{
+    padding: 0;
+    margin: 0;
+}
+.cards .title{
+    background: rgba(252, 210, 224, 17);
+    padding: 1.4rem 2.5rem;
+    font-size:2vmin;
+}
+
+.card .card-text{
+    padding: 1rem 1rem;
+    color: var(--light-blCK);
+}
+
+.cards-body .pricing{
+    background: rgba(252, 210, 224, 17);
+    border-top-right-radius: 120px;
+    border-top-left-radius: 120px;
+}
+
+.cards-body .pricing>h1{
+    font-size: 2vmin;
+    padding: 1em 0.5em;
+}
+
+/*.........Section 4..............*/
+
+.section-4 .container h1{
+    font-size: 6vmin;
+    padding-top: 10vmin;
+}
+.section-4 .team{
+    padding: 10vmin 4vmin;
+}
+
+.section-4 .card{
+    width: 22rem;
+    margin-top: 10vmin;
+}
+
+.section-4 .card .card-text{
+    padding:0.5em;
+}
+.section-4 .card .card-body>a{
+    font-size: 1em;
+}
+
+.section-4 .carousel-item{
+    padding-left: 3rem;
+}
+
+.border-radius{
+    border-radius: 54px;
+    width: 60%;
+}
+
+
+/*............Footer..............*/
+
+footer{
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 8vmin 14vmin;
+}
+
+footer p>span{
+    color:tomato;
+}
+
+footer input{
+    border: none !important;
+}
+
+footer input::placeholder{
+    color: white !important;
+}
+
+footer .input-group .input-group-text{
+    background-color: rgba(246, 114, 158, 17);
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
